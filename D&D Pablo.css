@@ -1,0 +1,163 @@
+*{
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+/*
+Todo el grid de la manera mas ordenada posible
+*/
+
+.contenedor{
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 15%;
+  grid-template-rows: 
+  100px 
+  100px 
+  auto 
+  120px;
+  grid-template-areas:
+    "mycab mycab mycab mycab"
+    "mynav mynav mynav mynav"
+    "mymain mymain mymain myaside"
+    "pie pie pie pie";
+  justify-content: stretch;
+  column-gap: 1%;
+  row-gap: 3%;
+  background-color: #2196F3;
+  padding: 1%;
+}
+
+/*-----------------CABERCERA---------------------*/
+header{
+  grid-area: mycab;
+  background-color: #b33c3c;
+}
+
+/*-----------------NAVEGADOR---------------------*/
+nav{
+  grid-area: mynav;
+  background-color: #3a7047;
+}
+
+/*-----------------MAIN---------------------*/
+main{
+  
+  grid-area: mymain;
+  background-color: #802d74;
+
+}
+
+/*-----------------ASIDE---------------------*/
+aside{
+  grid-area: myaside;
+  padding: 7% 0% 0% 15%;
+  background-color: rgb(255, 0, 0);
+}
+/*-------Article Clases--------*/
+.clases{
+
+  margin: 2%;
+  background-color: rgb(196, 172, 172);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  align-items: stretch;
+}
+.clases > article{
+  margin: 2%; 
+  padding: 2%;
+  text-align: center;
+  background-color: white;
+  color: rgb(255, 0, 200);
+}
+.clases > article > h1{
+  margin: 2%;
+}
+#barbaro{
+  background-image: url(ClasesIconos/barbarian.png);
+  background-repeat: no-repeat;
+  background-size: 50% 100%;
+  background-position: top left;
+}
+#guerrero{
+  background-image: url(ClasesIconos/warrior.png);
+  background-repeat: no-repeat;
+  background-size: 50% 100%;
+  background-position: top left;
+}
+#explorador{
+  background-image: url(ClasesIconos/ranger.png);
+  background-repeat: no-repeat;
+  background-size: 50% 100%;
+  background-position: top left;
+}
+#mago{
+  background-image: url(ClasesIconos/wizard.png);
+  background-repeat: no-repeat;
+  background-size: 50% 100%;
+  background-position: top left;
+}
+#druida{
+  background-image: url(ClasesIconos/druid.png);
+  background-repeat: no-repeat;
+  background-size: 50% 100%;
+  background-position: top left;
+}
+#hechicero{
+  background-image: url(ClasesIconos/sorcerer.png);
+  background-repeat: no-repeat;
+  background-size: 50% 100%;
+  background-position: top left;
+}
+#clerigo{
+  background-image: url(ClasesIconos/cleric.png);
+  background-repeat: no-repeat;
+  background-size: 50% 100%;
+  background-position: top left;
+}
+#paladin{
+  background-image: url(ClasesIconos/paladin.png);
+  background-repeat: no-repeat;
+  background-size: 50% 100%;
+  background-position: top left;
+}
+#brujo{
+  background-image: url(ClasesIconos/warlock.png);
+  background-repeat: no-repeat;
+  background-size: 50% 100%;
+  background-position: top left;
+}
+
+/*-------Article galeria--------*/
+.galeria{
+  background-color: rgb(196, 172, 172);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  align-items: stretch;
+  gap: 15px;
+}
+.galeria img {
+  border: #2196F3;
+  max-width: 100%;
+}
+.galeria :first-child{
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+}
+/*-----------------FOOTER---------------------*/
+footer{
+  grid-area: pie;
+  background-color: #a19999;
+}
+
+/*
+Fin del Grid, o eso espero
+*/
+
+/*
+Comienza el css de todo lo que hay dentro
+*/
