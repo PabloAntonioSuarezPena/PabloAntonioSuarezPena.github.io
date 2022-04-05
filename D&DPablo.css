@@ -71,6 +71,8 @@ aside{
   margin: 2%; 
   padding: 2%;
   text-align: center;
+  /* intento de alinear el texto */
+  float: right;
   background-color: white;
   color: rgb(255, 0, 200);
 }
