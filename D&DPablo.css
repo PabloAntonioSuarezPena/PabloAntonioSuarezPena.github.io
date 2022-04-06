@@ -12,12 +12,13 @@ Todo el grid de la manera mas ordenada posible
 .contenedor {
   height: 100vh;
   display: grid;
-  grid-template-columns: 1fr 2fr 2fr 15%;
+  grid-template-columns: 1fr 2fr 2fr 20%;
   grid-template-rows:
-    100px
-    100px
+    15%
+    5%
     auto
-    120px;
+    5%
+    ;
   grid-template-areas:
     "mycab mycab mycab mycab"
     "mynav mynav mynav mynav"
@@ -28,6 +29,7 @@ Todo el grid de la manera mas ordenada posible
   row-gap: 3%;
   background-color: #2196f3;
   padding: 1%;
+  margin: 2%;
 }
 
 /*-----------------CABERCERA---------------------*/
@@ -70,80 +72,26 @@ aside {
   /* intento de alinear el texto */
   float: right;
   background-color: white;
-  color: rgb(255, 0, 200);
 }
 .clases > article > h1 {
   margin: 2%;
 }
 
-#barbaro > img {
-  /* background-image: url(ClasesIconos/barbarian.png); 
-  background-repeat: no-repeat;
-  background-size: 50% 100%;
-  background-position: top left;
-*/
-  max-width: 100%;
-  height: auto;
-  display: block;
+.clases > article > img {
+  margin: 5%;
+  max-width: 50%;
+  height: 30%;
   margin-left: auto;
   margin-right: auto;
 }
-#guerrero {
-  background-image: url(ClasesIconos/warrior.png);
-  background-repeat: no-repeat;
-  background-size: 50% 100%;
-  background-position: top left;
-}
-#explorador {
-  background-image: url(ClasesIconos/ranger.png);
-  background-repeat: no-repeat;
-  background-size: 50% 100%;
-  background-position: top left;
-}
-#mago {
-  background-image: url(ClasesIconos/wizard.png);
-  background-repeat: no-repeat;
-  background-size: 50% 100%;
-  background-position: top left;
-}
-#druida {
-  background-image: url(ClasesIconos/druid.png);
-  background-repeat: no-repeat;
-  background-size: 50% 100%;
-  background-position: top left;
-}
-#hechicero {
-  background-image: url(ClasesIconos/sorcerer.png);
-  background-repeat: no-repeat;
-  background-size: 50% 100%;
-  background-position: top left;
-}
-#clerigo {
-  background-image: url(ClasesIconos/cleric.png);
-  background-repeat: no-repeat;
-  background-size: 50% 100%;
-  background-position: top left;
-}
-#paladin {
-  background-image: url(ClasesIconos/paladin.png);
-  background-repeat: no-repeat;
-  background-size: 50% 100%;
-  background-position: top left;
-}
-#brujo {
-  background-image: url(ClasesIconos/warlock.png);
-  background-repeat: no-repeat;
-  background-size: 50% 100%;
-  background-position: top left;
-}
-
 /*-------Article galeria--------*/
 .galeria {
   background-color: rgb(196, 172, 172);
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   align-items: stretch;
-  gap: 15px;
+  gap: 25px;
+  margin: 2%;
 }
 .galeria img {
   border: #2196f3;
