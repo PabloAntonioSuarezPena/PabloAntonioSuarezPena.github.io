@@ -17,8 +17,7 @@ Todo el grid de la manera mas ordenada posible
     15%
     5%
     auto
-    5%
-    ;
+    5%;
   grid-template-areas:
     "mycab mycab mycab mycab"
     "mynav mynav mynav mynav"
@@ -36,6 +35,14 @@ Todo el grid de la manera mas ordenada posible
 header {
   grid-area: mycab;
   background-color: #b33c3c;
+  background-image: url("Galeria/D&D.jpg");
+  background-size: auto 70%;
+  background-repeat: no-repeat;
+  background-position: 25% 50%;
+}
+header h1 {
+  margin: 5%;
+  text-align: center;
 }
 
 /*-----------------NAVEGADOR---------------------*/
