@@ -84,7 +84,9 @@ ul li {
   border-left: 10px solid #78281f;
 }
 aside img{
-  
+  padding-top: 5%;
+  max-width: 100%;
+  height: auto;
 }
 /*-------Article Clases--------*/
 .clases {
@@ -99,8 +101,6 @@ aside img{
   margin: 2%;
   padding: 2%;
   text-align: center;
-  /* intento de alinear el texto */
-  float: right;
   background-color: white;
 }
 .clases > article > h1 {
@@ -120,7 +120,9 @@ aside img{
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   align-items: stretch;
-  gap: 25px;
+  gap: 5px;
+  margin: 1%;
+  padding: 1%;
  /* margin: 2%;*/
 }
 .galeria img {
@@ -137,10 +139,12 @@ footer {
   background-color: #a19999;
 }
 
-/*
-Fin del Grid, o eso espero
-*/
+@media screen and (max-width: 768px) {
+  
+  [class*="col-"] {
+    width: 100%;
+}
 
-/*
-Comienza el css de todo lo que hay dentro
-*/
+
+
+
